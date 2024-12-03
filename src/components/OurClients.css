@@ -1,0 +1,56 @@
+.clients-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .clients-container h1 {
+    font-size: 2.5rem;
+    color: #007bff; /* Blue theme for heading */
+    margin-bottom: 30px;
+  }
+  
+  .clients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .client-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .client-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .client-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .client-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .clients-container h1 {
+      font-size: 2rem;
+    }
+  
+    .client-card p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+
+.navbar {
+  background-color: rgb(137, 137, 68);
+  color: #fff;
+  padding: 10px 20px;
+}
+
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo container */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 80px;
+  width: 100px;
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+/* Hover effect for links */
+.nav-links a:hover {
+  color: #ffcc00;
+}
+
+/* Active link styling */
+.nav-links a.active-link {
+  color: #ffcc00; 
+  font-weight: bold;
+  text-decoration: none; 
+}
+
+
+.menu-toggle {
+  display: none; 
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  background-color: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Show toggle button on small screens */
+  }
+
+  .nav-links {
+    display: none; /* Hide navigation links by default */
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    border: 1px solid #444;
+  }
+
+  .nav-links.active {
+    display: flex; /* Show navigation links when menu is active */
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+    text-align: center;
+  }
+}

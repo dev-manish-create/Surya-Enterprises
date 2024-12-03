@@ -1,0 +1,75 @@
+.footer-container {
+    background-color: #333; /* Dark background */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .footer-logo img {
+    max-width: 120px; /* Adjust based on your logo size */
+    margin-bottom: 10px;
+  }
+  
+  .footer-logo h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #00a550; /* Green color for the slogan */
+    margin: 0;
+  }
+  
+  .footer-social {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .social-button {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .social-button.instagram {
+    background-color: #e1306c; /* Instagram pink */
+  }
+  
+  .social-button.instagram:hover {
+    background-color: #c1285e;
+  }
+  
+  .social-button.whatsapp {
+    background-color: #25d366; /* WhatsApp green */
+  }
+  
+  .social-button.whatsapp:hover {
+    background-color: #20b357;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+    }
+  
+    .social-button {
+      padding: 8px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
