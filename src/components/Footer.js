@@ -1,4 +1,3 @@
-import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Footer.css";
 import companyLogo from "./Nav-logo.png"; // Update with the path to your logo
@@ -33,15 +32,27 @@ const Footer = () => {
                         WhatsApp
                     </a>
                 </div>
-                <p>📍 Address: 16/212 Trilok puri, New Delhi-110091 </p>
-                <p>📞 <a href="tel:+919220489443" style={{textDecoration:'none',color:'#1bc5c8'}}>+919220489443</a> |
-                    ✉️ <a href="suryaenterprises108@gmail.com" style={{textDecoration:'none',color:'#1bc5c8'}}>suryaenterprises108@gmail.com</a>
+                <p>
+                    <strong>Address:</strong>{" "}
+                    <a style={{ textDecoration: "none", color: "#1bc5c8" }}
+                        href="https://maps.app.goo.gl/FozkQ5HuoHbnSVvA9" // Replace with your real link
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        16/212 Trilok puri,Main Vasundra Raod New Delhi-110091
+                    </a>
+                </p>
+
+                <p>📞 <a href="tel:+919220489443" style={{ textDecoration: 'none', color: '#1bc5c8' }}>+919220489443</a> |
+                    ✉️ <a href="suryaenterprises108@gmail.com" style={{ textDecoration: 'none', color: '#1bc5c8' }}>suryaenterprises108@gmail.com</a>
                 </p>
             </div>
 
             {/* Copyright Text */}
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} SURYA ENTERPRISES. All rights reserved. | Developed By Manish Singh <NavLink to="/privacypolicy">|Privacy Policy | Terms & conditions|</NavLink></p>
+                <p>&copy; {new Date().getFullYear()} SURYA ENTERPRISES. All rights reserved. |<a href="https://www.linkedin.com/in/manish-singh-765558217" target="_blank" rel="noopener noreferrer" style={{ color: '#1bc5c8',textDecoration:"none"}}> Developed by Manish singh </a>
+
+                    <NavLink to="/privacypolicy" style={{ textDecoration: "none", color: "#1bc5c8" }} > | Privacy Policy | Terms & conditions |</NavLink></p>
             </div>
         </footer>
     );

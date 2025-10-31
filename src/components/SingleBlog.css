@@ -1,0 +1,103 @@
+.single-blog-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.single-blog-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.single-blog-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.single-blog-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #222;
+}
+
+.single-blog-date {
+  font-size: 0.95rem;
+  color: #777;
+  margin-top: 5px;
+}
+
+.single-blog-content {
+  font-size: 1.05rem;
+  margin-top: 30px;
+}
+
+.single-blog-content h2 {
+  font-size: 1.4rem;
+  margin-top: 25px;
+  color: #0077ff;
+}
+
+.single-blog-content p {
+  margin: 12px 0;
+}
+
+/* Share Buttons */
+.share-buttons {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.share-buttons p {
+  font-weight: 600;
+}
+
+.share-buttons a {
+  color: #0077ff;
+  text-decoration: none;
+  border: 1px solid #0077ff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.share-buttons a:hover {
+  background-color: #0077ff;
+  color: white;
+}
+
+.back-to-blogs {
+  display: inline-block;
+  margin-top: 40px;
+  color: #0077ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.back-to-blogs:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .single-blog-title {
+    font-size: 1.6rem;
+  }
+
+  .single-blog-content {
+    font-size: 1rem;
+  }
+
+  .single-blog-image {
+    max-height: 300px;
+  }
+}

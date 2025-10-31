@@ -78,6 +78,17 @@ const Navbar = () => {
               Gallery
             </NavLink>
           </li>
+
+          <li>
+            <NavLink
+              to="/Blogs"
+              className={({ isActive }) => (isActive ? "active-link" : undefined)}
+              onClick={handleLinkClick}
+            >
+              Blogs
+            </NavLink>
+          </li>
+
         </ul>
       </div>
     </nav>

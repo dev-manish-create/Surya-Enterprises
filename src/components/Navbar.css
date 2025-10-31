@@ -93,6 +93,7 @@
 
   .nav-links.active {
     display: flex; /* Show navigation links when menu is active */
+    z-index: 1000;
   }
 
   .nav-links li {
