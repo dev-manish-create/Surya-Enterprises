@@ -8,7 +8,7 @@ const OurServices = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/services/get-services")
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/services/get-services`)
       .then((res) => res.json())
       .then((data) => {
         setServices(data);

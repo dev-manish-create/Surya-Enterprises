@@ -1,0 +1,24 @@
+.google-reviews-container {
+  padding: 40px 20px;
+  background-color: #f9fafb;
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  box-sizing: border-box;
+}
+
+/* Target iframe inside Elfsight widget */
+.google-reviews-container iframe {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden;
+  border: none;
+  display: block;
+}
+
+/* Ensure inner widget content doesn't overflow */
+.elfsight-app-12a273cc-854b-46b1-98a3-045c81ea593f {
+  width: 100% !important;
+  max-width: 100%;
+  overflow: hidden;
+}

@@ -9,7 +9,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchImages = async () => {
       try {
-        const res = await fetch("http://localhost:5000/api/gallery/list"); // your API endpoint
+        const res = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/gallery/list`); // your API endpoint
         const data = await res.json();
         setImages(data.data || []);
       } catch (err) {

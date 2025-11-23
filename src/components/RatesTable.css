@@ -1,0 +1,57 @@
+.rates-container {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.rates-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.loading, .no-data {
+  text-align: center;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto; /* Horizontal scroll support for mobile */
+}
+
+.rates-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px; /* keeps table readable on small screens */
+}
+
+.rates-table th,
+.rates-table td {
+  border: 1px solid #ccc;
+  padding: 12px;
+  text-align: left;
+}
+
+.rates-table th {
+  background: #f0f0f0;
+  font-weight: bold;
+}
+
+.rates-table tr:nth-child(even) {
+  background: #fafafa;
+}
+
+@media (max-width: 600px) {
+  .rates-table th,
+  .rates-table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .rates-title {
+    font-size: 22px;
+  }
+}

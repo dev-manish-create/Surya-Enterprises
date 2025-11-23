@@ -7,7 +7,7 @@ const SingleBlog = () => {
   const [blog, setBlog] = useState(null);
 
   useEffect(() => {
-  fetch(`http://localhost:5000/api/blogs/get/${slug}`)
+  fetch(`${process.env.REACT_APP_BACKEND_URL}/api/blogs/get/${slug}`)
     .then((res) => res.json())
     .then((data) => {
       if (data) setBlog(data);

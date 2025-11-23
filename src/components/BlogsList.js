@@ -89,7 +89,7 @@ const BlogsList = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/blogs/get")
+    fetch(`${process.env.REACT_APP_BACKEND_URL}/api/blogs/get`)
       .then((res) => res.json())
       .then((data) => {
         if (data && data.data) {

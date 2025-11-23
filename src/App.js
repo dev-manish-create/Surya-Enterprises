@@ -7,6 +7,7 @@ import Contactus from './components/Contactus';
 import Footer from './components/Footer';
 import Form from './components/Form';
 import Gallery from './components/Gallery';
+import GoogleReviews from './components/GoogleReviews';
 import HomeBanner from './components/HomeBanner';
 import logo from './components/Nav-logo.png';
 import Navbar from './components/Navbar';
@@ -15,6 +16,7 @@ import OurServices from "./components/OurServices";
 import OurVision from "./components/OurVision";
 import PrivacyPolicy from './components/PrivacyPolicy';
 import QualityPolicy from "./components/QualityPolicy";
+import RatesTable from './components/RatesTable';
 import SingleBlog from './components/SingleBlog';
 import TermsAndConditions from './components/TermsAndConditions';
 import VideoGallery from './components/VideoGallery';
@@ -36,12 +38,14 @@ function App() {
              {/* <CompanyBanner banner={logo} /> */}
              <WhyChooseUs/>
              <Contactus />
+             <RatesTable/>
             <VideoGallery/>
               <Gallery />
               <BlogsList/>
            <AboutUs />
            <OurVision />
            <QualityPolicy />
+           <GoogleReviews/>
             </>
           }
           />

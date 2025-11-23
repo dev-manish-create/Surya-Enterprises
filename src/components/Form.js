@@ -23,7 +23,7 @@ const Form = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch("http://localhost:5000/api/contacts/create", {
+            const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/contacts/create`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -130,7 +130,7 @@ const Form = () => {
                         >
                             <FaWhatsapp /> WhatsApp
                         </a>
-                        <a href="suryaenterprises108@gmail.com" className="contact-item">
+                        <a href="mailto:suryaenterprises108@gmail.com" className="contact-item">
                             <FaEnvelope /> Email
                         </a>
                         <a

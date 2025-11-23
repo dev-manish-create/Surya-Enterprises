@@ -44,7 +44,7 @@ const Footer = () => {
                 </p>
 
                 <p>📞 <a href="tel:+919220489443" style={{ textDecoration: 'none', color: '#1bc5c8' }}>+919220489443</a> |
-                    ✉️ <a href="suryaenterprises108@gmail.com" style={{ textDecoration: 'none', color: '#1bc5c8' }}>suryaenterprises108@gmail.com</a>
+                    ✉️ <a href="mailto:suryaenterprises108@gmail.com" style={{ textDecoration: 'none', color: '#1bc5c8' }}>suryaenterprises108@gmail.com</a>
                 </p>
             </div>
 
