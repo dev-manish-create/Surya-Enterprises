@@ -10,7 +10,37 @@ const Footer = () => {
                 <div className="footer-logo">
                     <img src={companyLogo} alt="Surya Enterprises Logo" />
                     <h3>SERVING FOR CUSTOMERS SATISFACTION</h3>
-                    <h4>Expert Marble Floor Polishing | Housekeeping services | Carpet & Sofa Cleaning | Wooden floor maintenance & polishing | Facade cleanign services | Deep cleaning services </h4>
+                    <h4>
+                        <NavLink to='/services/marble-polishing' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Expert Marble Floor Polishing</NavLink> | 
+   
+                        <NavLink to='/services/housekeeping' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Housekeeping services</NavLink> | 
+   
+                        <NavLink to='/services/sofa-carpet-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Carpet & Sofa Cleaning</NavLink> | 
+   
+                        <NavLink to='/services/wooden-floor-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Wooden floor maintenance & polishing</NavLink> | 
+   
+                        <NavLink to='/services/glass-and-fascade-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Facade cleanign services</NavLink> | 
+   
+                        <NavLink to='services/pool-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Swimming Pool cleaning and Maintenace</NavLink> | 
+   
+                        <NavLink to='/services/tiles-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Tiles cleaning</NavLink> | 
+   
+                        <NavLink to='/services/pest-control' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Pest Control</NavLink> | 
+   
+                        <NavLink to='/services/full-home-move-in-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Full Home/Move in cleaning</NavLink> | 
+   
+                        <NavLink to='/services/Bathroom-cleaning' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Bathroom cleaning</NavLink>  |
+
+                        <NavLink to='/services/kota-stone-polishing' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Kota Stone Polishing</NavLink>  |
+                        <NavLink to='/services/italian-marble-polishing' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Italian Marble Polishing</NavLink>  |
+                        <NavLink to='/services/granite-floor-polishing' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Granite Floor  Polishing</NavLink>  |
+                        <NavLink to='/services/floor-grinding-maintenance-crystallization' style={{ textDecoration: "none", color: "#1bc5c8" }}>   Floor Grinding / Maintenance / Crystallization</NavLink>  |
+
+
+                    </h4>
+
+
+
                 </div>
 
                 {/* Social Media Links */}
@@ -50,7 +80,7 @@ const Footer = () => {
 
             {/* Copyright Text */}
             <div className="footer-bottom">
-                <p>&copy; {new Date().getFullYear()} SURYA ENTERPRISES. All rights reserved. |<a href="https://www.linkedin.com/in/manish-singh-765558217" target="_blank" rel="noopener noreferrer" style={{ color: '#1bc5c8',textDecoration:"none"}}> Developed by Manish singh </a>
+                <p>&copy; {new Date().getFullYear()} SURYA ENTERPRISES. All rights reserved. |<a href="https://www.linkedin.com/in/manish-singh-765558217" target="_blank" rel="noopener noreferrer" style={{ color: '#1bc5c8', textDecoration: "none" }}> Developed by Manish singh </a>
 
                     <NavLink to="/privacypolicy" style={{ textDecoration: "none", color: "#1bc5c8" }} > | Privacy Policy | Terms & conditions |</NavLink></p>
             </div>

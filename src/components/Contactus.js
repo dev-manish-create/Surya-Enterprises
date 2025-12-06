@@ -1,4 +1,3 @@
-import React from "react";
 import "./Contactus.css";
 
 const Contactus = () => {
@@ -7,7 +6,7 @@ const Contactus = () => {
       <div className="contact-text">
         <h2>Request a call back right now</h2>
         <p>
-             For Marble Floor Polishing. <br />
+            
              Our Service Area: Gurgaon, Delhi NCR, Faridabad, Noida  and all over India.
         </p>
         <h2>Book Demo Now!!!</h2>

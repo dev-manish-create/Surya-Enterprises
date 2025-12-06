@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import "./OurServices.css";
 
 const OurServices = () => {
@@ -25,7 +25,7 @@ const OurServices = () => {
   return (
     <div className="our-services">
       <p className="intro-text">
-        At<strong> Surya Enterprises</strong>, we’re here to handle all your cleaning and maintenance needs—big or small. 
+        At<strong> Surya Enterprises</strong>, we’re here to handle all your cleaning and maintenance needs—big or small.
         We offer a variety of services to ensure every part of your space gets the attention it deserves.
       </p>
 
@@ -39,7 +39,14 @@ const OurServices = () => {
               className="service-image"
             />
             <div className="service-content">
-              <h1 className="service-title">{service.title}</h1>
+              {/* <h1 className="service-title">{service.title}</h1> */}
+              <NavLink
+                to={service.link}
+                className="service-title-link"
+                style={{ textDecoration: "none" }}
+              >
+                <h1 className="service-title">{service.title}</h1>
+              </NavLink>
               <p className="service-description">{service.description}</p>
               {/* <button
                 className="book-service-btn"
@@ -47,7 +54,7 @@ const OurServices = () => {
               >
                 Book Now!
               </button> */}
-              <Link to="/contactus" className="book-service-btn" style={{textDecoration : "none"}}>
+              <Link to="/contactus" className="book-service-btn" style={{ textDecoration: "none" }}>
                 Book Service
               </Link>
             </div>
